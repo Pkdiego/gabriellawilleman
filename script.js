@@ -52,6 +52,28 @@ window.addEventListener("scroll", function () {
     }
 });
 
+window.addEventListener("scroll", function () {
+    var navbar = document.getElementById("navbar");
+    var contentz = document.querySelectorAll('.content');
+    var logoImg = document.getElementById("logo-img");
+    
+    if (window.scrollY > 0) {
+        navbar.style.backgroundColor = "white";
+        contentz.forEach(function (content) {
+            content.style.color = "#6A3844";
+        });
+        // Mudar para logo2.png
+        logoImg.src = "/imagem/logo.png";
+    } else {
+        navbar.style.backgroundColor = "";
+        contentz.forEach(function (content) {
+            content.style.color = "#FFFFFF";
+        });
+        // Voltar para logo.png
+        logoImg.src = "/imagem/logo2.png";
+    }
+});
+
 
 document.addEventListener("scroll", function () {
     const elementsToAnimate = document.querySelectorAll(".animar");
