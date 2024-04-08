@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
   
 * {
     padding: 0;
     margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 .adv {
@@ -25,7 +29,7 @@ img {
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -35,6 +39,7 @@ nav {
     color: #161616;
     width: 100%;
     z-index: 100;
+    
 }
 
 #navbar {
@@ -44,20 +49,31 @@ nav {
     width: 100%;
     z-index: 100;
     transition: background-color 0.3s, color 0.3s;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     box-shadow: rgba(38, 33, 33, 0.1) 0px 10px 10px -10px;
+
 }
 
 .contentz{
     color: white;
    
 }
-nav a{
-    color: white
+nav a {
+    color: white;
+    padding: 5px;
+    transition: 0.2s;
+    overflow: hidden !important;
 }
+
 nav a:hover {
-    border-bottom: 1px solid #fafeff;
+    background-color: #D2606C;
+    padding: 5px;
+    overflow: hidden !important;
+    border-radius: 5px;
+    color: white !important;
+    transition: 0.2s;
 }
+
 
 footer {
     background: linear-gradient(180deg, rgb(69, 132, 151) 35%, rgb(79, 120, 131) 100%);
@@ -118,7 +134,58 @@ li {
 }
 
 
+/*CARDS*/
 
+    .flip-card {
+        margin: 10px;
+        cursor: pointer;
+      background-color: transparent;
+    width: 100%;
+      height: 300px;
+      perspective: 1000px;
+  
+    }
+
+    .flip-card-inner {
+        
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.7s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #eeeeee;
+      color: black;
+      border-radius: 5px;
+      -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.11);
+-moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.199);
+box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
+    }
+
+    .flip-card-back {
+      background-color: #E67E7E;
+      color: white;
+      transform: rotateY(180deg);
+      -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.11);
+      -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.199);
+      box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
+    }
+  
 .font-roboto {
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -147,7 +214,6 @@ li {
 }
 
 .animar {
-
     opacity: 0;
     transition: opacity 0.7s ease-in-out;
 }
@@ -166,7 +232,11 @@ li {
 }
 
 .my-servicos {
-    background: url('./imagem/detalhe2.jpg') no-repeat center center;
+display: flex;
+padding: 50px;
+background: linear-gradient(40deg, #824C5A, #996977, #D2606C);
+
+    justify-content: center;
     width: 100%;
     background-size: cover;
 }
@@ -285,15 +355,14 @@ hr {
     transition: 0.2s;
 }
 
-.parallax-container {
+/* .parallax-container {
     position: relative;
     overflow: hidden;
 
-}
+} */
 
 .my-faq {
 
-    background: url('./imagem/detalhe-origi.jpg') no-repeat center center;
     background-attachment: fixed;
     /* Isso é importante para o efeito de parallax */
     background-size: cover;
@@ -325,6 +394,11 @@ hr {
     padding-top: 130px;
 }
 
+.my-i{
+
+    font-size: 40px;
+    color: #D3616C;
+}
 .my-h {
 
     font-size: 2.4em;
@@ -336,9 +410,9 @@ hr {
 
 .my-h1 {
 
-    font-size: 2.4em;
+    font-size: 2.8em;
     padding: 5px;
-    border: 1px solid #dbdbdb79;
+    border-bottom: 1px solid #d3616ca9;
     border-radius: 10px;
     font-weight: 900 !important;
     color: #464646;
@@ -354,6 +428,9 @@ hr {
     font-size: 30px;
 }
 
+.accordion-button{
+ 
+}
 .contato {
     border-radius: 8px;
     cursor: pointer;
@@ -484,5 +561,9 @@ a:active {
     }
     #scrollToTopBtn{
         display: none !important;
+    }
+    .my-img-content{
+       width: 200px;
+       padding-bottom: 50px;;
     }
 }

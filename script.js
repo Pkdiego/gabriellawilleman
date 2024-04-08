@@ -60,7 +60,7 @@ window.addEventListener("scroll", function () {
     if (window.scrollY > 0) {
         navbar.style.backgroundColor = "white";
         contentz.forEach(function (content) {
-            content.style.color = "#6A3844";
+            content.style.color = "#ED8783";
         });
         // Mudar para logo2.png
         logoImg.src = "/imagem/logo.png";
@@ -101,4 +101,5 @@ function closeMenu() {
     var myul = document.getElementById('myul');
     myul.classList.remove('show-nav');
 }
+
 
