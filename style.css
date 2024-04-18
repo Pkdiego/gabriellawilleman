@@ -6,7 +6,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "DM Sans", sans-serif;
+    font-family: poppins;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
@@ -142,8 +142,9 @@ li {
         cursor: pointer;
       background-color: transparent;
     width: 100%;
-      height: 200px;
+      height: 300px;
       perspective: 1000px;
+      d-
   
     }
 
@@ -173,12 +174,15 @@ li {
     }
 
     .flip-card-front {
-      background-color: #eeeeee;
-      color: black;
-      border-radius: 5px;
-      -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.11);
--moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.199);
-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
+        display: flex;
+        background-color: #ffffff;
+        color: black;
+        border-radius: 5px;
+        -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.8);
+        -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.19);
+        box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
+        flex-direction: column;
+        justify-content: center;
     }
 
     .flip-card-back {
@@ -238,8 +242,8 @@ box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
 .my-servicos {
 display: flex;
 padding: 50px;
-background: linear-gradient(40deg, #824C5A, #996977, #D2606C);
-
+/* background: linear-gradient(40deg, #824C5A, #996977, #D2606C); */
+background: linear-gradient(180deg, #ffffff, #f3cfd938, #ffcad073);
     justify-content: center;
     width: 100%;
     background-size: cover;
@@ -539,6 +543,7 @@ a:active {
         height: 70px;
     }
 
+ 
     .my-h0 {
         font-size: 1.6em;
         font-weight: 700;
@@ -601,7 +606,7 @@ a:active {
         display: none !important;
     }
     .my-img-content{
-       width: 200px;
+       width: 250px;
        padding-bottom: 50px;;
     }
 }
