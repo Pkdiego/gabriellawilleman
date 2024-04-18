@@ -60,7 +60,7 @@ window.addEventListener("scroll", function () {
     if (window.scrollY > 0) {
         navbar.style.backgroundColor = "white";
         contentz.forEach(function (content) {
-            content.style.color = "#ED8783";
+            content.style.color = "black";
         });
         // Mudar para logo2.png
         logoImg.src = "/imagem/logo.png";

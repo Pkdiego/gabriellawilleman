@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-  
+
 * {
     padding: 0;
     margin: 0;
@@ -19,8 +19,8 @@
     font-weight: <weight>;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;
-  }
+        "wdth" 100;
+}
 
 
 img {
@@ -40,7 +40,7 @@ nav {
     color: #161616;
     width: 100%;
     z-index: 100;
-    
+
 }
 
 #navbar {
@@ -55,14 +55,15 @@ nav {
 
 }
 
-.contentz{
+.contentz {
     color: white;
-   
+
 }
+
 nav a {
     color: white;
     padding: 5px;
-    transition: 0.2s;
+
     overflow: hidden !important;
 }
 
@@ -72,7 +73,7 @@ nav a:hover {
     overflow: hidden !important;
     border-radius: 5px;
     color: white !important;
-    transition: 0.2s;
+
 }
 
 
@@ -134,66 +135,68 @@ li {
     }
 }
 
+.mapa{
+    height: 520px;
+}
 
 /*CARDS*/
 
-    .flip-card {
-        margin: 10px;
-        cursor: pointer;
-      background-color: transparent;
+.flip-card {
+    margin: 10px;
+    cursor: pointer;
+    background-color: transparent;
     width: 100%;
-      height: 300px;
-      perspective: 1000px;
-      d-
-  
-    }
+    height: 300px;
+    perspective: 1000px;
+    d-
+}
 
-    .flip-card-inner {
-        
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.7s;
-      transform-style: preserve-3d;
-      transition: 0.3s;
-    }
+.flip-card-inner {
 
-    .flip-card:hover .flip-card-inner {
-      /* transform: rotateY(180deg); */
-      margin-top: -15px;
-      transition: 0.4s;
-    }
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+}
 
-    .flip-card-front,
-    .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
+.flip-card:hover .flip-card-inner {
+    /* transform: rotateY(180deg); */
+    margin-top: -15px;
+    transition: 0.4s;
+}
 
-    .flip-card-front {
-        display: flex;
-        background-color: #ffffff;
-        color: black;
-        border-radius: 5px;
-        -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.8);
-        -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.19);
-        box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
-        flex-direction: column;
-        justify-content: center;
-    }
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 
-    .flip-card-back {
-      background-color: #E67E7E;
-      color: white;
-      transform: rotateY(180deg);
-      -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.11);
-      -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.199);
-      box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
-    }
-  
+.flip-card-front {
+    display: flex;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-card-back {
+    background-color: #E67E7E;
+    color: white;
+    transform: rotateY(180deg);
+    -webkit-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.199);
+    box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.123);
+}
+
 .font-roboto {
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -240,10 +243,10 @@ li {
 }
 
 .my-servicos {
-display: flex;
-padding: 50px;
-/* background: linear-gradient(40deg, #824C5A, #996977, #D2606C); */
-background: linear-gradient(180deg, #ffffff, #f3cfd938, #ffcad073);
+    display: flex;
+    padding: 50px;
+    /* background: linear-gradient(40deg, #824C5A, #996977, #D2606C); */
+    background: linear-gradient(180deg, #ffffff, #f3cfd938, #ffcad073);
     justify-content: center;
     width: 100%;
     background-size: cover;
@@ -261,8 +264,9 @@ background: linear-gradient(180deg, #ffffff, #f3cfd938, #ffcad073);
     background-size: cover;
     /* -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
     clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0); */
-    transition: clip-path 0.8s ease, opacity 0.8s ease; /* Suavizando a transição e adicionando transição de opacidade */
-  
+    transition: clip-path 0.8s ease, opacity 0.8s ease;
+    /* Suavizando a transição e adicionando transição de opacidade */
+
 }
 
 .scrolled-down {
@@ -406,11 +410,12 @@ hr {
     padding-top: 180px;
 }
 
-.my-i{
+.my-i {
 
     font-size: 40px;
     color: #D3616C;
 }
+
 .my-h {
 
     font-size: 2.4em;
@@ -437,7 +442,7 @@ hr {
     font-size: 2.8em;
     padding: 5px;
     border-radius: 10px;
-    font-weight: 900 !important;
+    font-weight: 1000 !important;
     color: #464646;
     border-left: 6px solid 464646;
     padding-left: 5px;
@@ -459,12 +464,14 @@ hr {
     color: white;
     box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
+
 .accordion-button:focus {
     z-index: 3;
     border-color: #AD6673;
     outline: 0;
     box-shadow: var(--bs-accordion-btn-focus-box-shadow);
 }
+
 .contato {
     border-radius: 8px;
     cursor: pointer;
@@ -477,15 +484,18 @@ hr {
 }
 
 .contato-p {
-    color: white; /
+    color: white;/
 }
 
-.degrade{
-    -webkit-background-clip: text; /* Define a área de recorte da imagem de fundo (texto) */
-    font-weight: 980 !important; /* Define o peso da fonte como 980 (importante para substituir outras regras de estilo) */
-    background-image: linear-gradient(92deg, #df6975 1.55%, #EE8A85 52.07%, #DE7276 114.33%);  
+.degrade {
+    -webkit-background-clip: text;
+    /* Define a área de recorte da imagem de fundo (texto) */
+    font-weight: 980 !important;
+    /* Define o peso da fonte como 980 (importante para substituir outras regras de estilo) */
+    background-image: linear-gradient(92deg, #df6975 1.55%, #EE8A85 52.07%, #DE7276 114.33%);
     color: transparent;
 }
+
 @keyframes rainbow {
     0% {
         background-position: 0% 50%;
@@ -543,7 +553,10 @@ a:active {
         height: 70px;
     }
 
- 
+    .mapa{
+        height: 350px;
+    }
+
     .my-h0 {
         font-size: 1.6em;
         font-weight: 700;
@@ -555,7 +568,7 @@ a:active {
         padding-top: 50px;
     }
 
-    .pt-180{
+    .pt-180 {
         padding-top: 50px;
     }
 
@@ -599,14 +612,17 @@ a:active {
         box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
     }
 
-    .show-nav a{
+    .show-nav a {
         color: black !important;
     }
-    #scrollToTopBtn{
+
+    #scrollToTopBtn {
         display: none !important;
     }
-    .my-img-content{
-       width: 250px;
-       padding-bottom: 50px;;
+
+    .my-img-content {
+        width: 250px;
+        padding-bottom: 50px;
+        ;
     }
 }
