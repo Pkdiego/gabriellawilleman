@@ -102,4 +102,10 @@ function closeMenu() {
     myul.classList.remove('show-nav');
 }
 
+function redirecionarParaWhatsApp() {
+    var mensagem = encodeURIComponent("Olá, gostaria de saber mais sobre direito de família.");
+    var numeroWhatsApp = "5521965182206";
+    var url = "https://wa.me/" + numeroWhatsApp + "?text=" + mensagem;
+    window.location.href = url;
+}
 
